@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=utf-8>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+<title>Oscar Redemption page -And the winner isn't… (from the book Responsive Web Design with HTML5 & CSS3 by Ben Frain)</title>
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+<link href="css/main.css" rel="stylesheet" />
+<script src="js/jquery-1.7.1.js"></script> 
+<script src="js-webshim/minified/extras/modernizr-custom.js"></script>
+<script src="js-webshim/minified/polyfiller.js"></script>
+<script src="js/conditional.js"></script>
+<script src="js/script.js"></script> 
+<script> 	
+	//replace UI also in browsers which do support type="date"/type="slider"
+	$.webshims.setOptions('forms-ext', { replaceUI: false });
+	
+	//set language/UI dateformat
+	//$.webshims.activeLang('hu'); // hu == hungary
+	
+	//start polyfilling
+	$.webshims.polyfill('forms-ext');
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30819100-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- Notes: in a production environment, JS scripts and CSS should be concatenated. More scripts means more http requests which in turn means a slower site. Also comments would be removed to make the file as lean as possible. Finally, it's usually best to put links to all <script> files just before the final </body> tag. That way, the document has loaded before the JavaScript attempts to manipulate anything. However, I've left it in the head here so you see it! BF. -->
+</head>
+
+<body id="redemptionPage">
+
+<div id="wrapper"> 
+	<!-- the header and navigation -->
+	<header role="banner" class="group">
+		<a href="/"><div id="logo">And the winner is<span>n't...</span></div></a> 
+		<nav role="navigation"> 
+			<ul id="mainNav">
+				<li><a href="index.html">Why?</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="offline.html">Offline</a></li>
+				<li><a href="redemption.html">Redemption</a></li>
+				<li><a href="video.html">Videos/clips</a></li>
+				<li><a href="3Dquiz.html">Quiz</a></li>
+			</ul>
+		</nav> 	 	
+	</header> 
+	<!-- the content -->
+	<div id="content" role="main">
+		
+		
+		<form id="redemption" method="post">
+			<hgroup>
+				<h1>Oscar Redemption</h1>
+				<h2>Here's your chance to set the record straight: tell us what year the wrong film got nominated, and which film <b>should</b> have received a nod...</h2>
+			</hgroup>
+			<fieldset>
+				<legend>About the offending film (part 1 of 3)</legend>
+				<div>
+					<label for="film">The film in question?</label>
+					<input id="film" name="film" type="text" placeholder="e.g. King Kong" required aria-required="true">
+				</div>
+				<div>
+					<label for="yearOfCrime">Year Of Crime</label>
+					<input id="yearOfCrime" name="yearOfCrime" type="number" min="1929" max="2015" required aria-required="true">
+				</div>
+				<div>
+					<label for="awardWon">Award Won</label>
+					<input id="awardWon" name="awardWon" type="text" list="awards">
+					<datalist id="awards">
+						<select>					
+							<option value="Best Picture"></option>
+							<option value="Best Director"></option>
+							<option value="Best Adapted Screenplay"></option>
+							<option value="Best Original Screenplay"></option>
+						</select>
+					</datalist>
+				</div>
+				<div>
+					<label for="whyItsWrong">Tell us why that's wrong?</label>
+					<textarea id="whyItsWrong" name="whyItsWrong" placeholder="I fell asleep within 20 minutes..." required aria-required="true" ></textarea>
+				</div>
+				<div>
+					<label for="howYouRateIt">How you rate it (1 is woeful, 10 is awesomesauce)</label>
+					<input id="howYouRateIt" name="howYouRateIt" type="range" min="1" max="10" value="5" onchange="showValue(this.value)"><span id="range">5</span>
+					
+				</div>
+				<script>
+				function showValue(newValue)
+				{
+					document.getElementById("range").innerHTML=newValue;
+				}
+				</script>
+				
+			</fieldset>
+			
+			<fieldset>
+				<legend>What should have won? (part 2 of 3)</legend>
+				
+				<div>
+					<label for="filmGood">The film that should have won?</label>
+					<input id="filmGood" name="filmGood" type="text" placeholder="e.g. Cable Guy" required aria-required="true" >
+				</div>
+				
+				<div>
+					<label for="whyItShould">Tell us why it should have won?</label>
+					<textarea id="whyItShould" name="whyItShould" placeholder="Hello? CAABBLLLLE GUUUY!!!!!" required aria-required="true" ></textarea>
+				</div>
+				<div>
+					<label for="howYouRateThis">How you rate it (1 is woeful, 10 is awesomesauce)</label>
+					<input id="howYouRateThis" name="howYouRateThis" type="number" min="1" max="10" value="5" required aria-required="true">
+				</div>
+				
+			</fieldset>
+			
+			<fieldset>
+				<legend>About you? (part 3 of 3)</legend>
+				
+				<div>
+					<label for="name">Your Name</label>
+					<input id="name" name="name" pattern="([a-zA-Z]{3,30}\s*)+[a-zA-Z]{3,30}" placeholder="Dwight Schultz" required aria-required="true" >
+				</div>
+				<div>
+					<label for="color">Your favorite color</label>
+					<input id="color" name="color" type="color">
+				</div>
+				<div>
+					<label for="date">Date/Time</label>
+					<input id="date" class="pickDate" type="date" name="date" />
+				</div>
+				<div>
+					<label for="tel">Telephone (so we can berate you if you're wrong)</label>
+					<input id="tel" name="tel" type="tel" placeholder="1-234-546758" autocomplete="off" required aria-required="true" >
+				</div>
+				<div>
+					<label for="email">Your Email address</label>
+					<input id="email" name="email" type="email" placeholder="dwight.schultz@gmail.com" required aria-required="true">
+				</div>
+				<div>
+					<label for="web">Your Web address</label>
+					<input id="web" name="web" type="url" placeholder="www.mysite.com">
+				</div>
+				
+			</fieldset>
+			<input type="submit" id="submit" value="Submit Redemption">
+		</form>
+		
+	</div>
+	<!-- the sidebar -->
+	<aside>
+		<section role="complementary">
+			<div class="sideBlock unSung">
+				<h1>Unsung heroes...</h1>
+				<a href="#"><img src="img/midnightRun.jpg" alt="Midnight Run" /><span class="moreInfo">more info</span></a>
+				<a href="#"><img class="sideImage" src="img/wyattEarp.jpg" alt="Wyatt Earp" /><span class="moreInfo">more info</span></a>
+			</div>
+		</section>
+		<section role="complementary">
+			<div class="sideBlock overHyped">
+				<h1>Overhyped nonsense...</h1>
+				<a href="#"><img src="img/moulinRouge.jpg" alt="Moulin Rouge" /><span class="moreInfo">more info</span></a>
+				<a href="#"><img class="sideImage" src="img/kingKong.jpg" alt="King Kong" /><span class="moreInfo">more info</span></a>
+			</div>
+		</section>
+	</aside>  
+	<!-- the footer -->
+	<footer role="contentinfo"> 
+		<p>Note: our opinion is absolutely correct. You are wrong, even if you think you are right. That’s a fact. Deal with it. <span> Made by <a href="http://benfrain.com">benfrain.com</a></span></p>
+	</footer> 
+
+</div> 
+
+
+
+</body>
+</html>

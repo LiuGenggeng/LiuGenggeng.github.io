@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" manifest="offline.manifest">
 <meta charset=utf-8>
-<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
-<title>And the winner isn't… (from the book Responsive Web Design with HTML5 & CSS3 by Ben Frain)</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<title>Offline page - And the winner isn't… (from the book Responsive Web Design with HTML5 & CSS3 by Ben Frain)</title>
 <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 <link href="css/main.css" rel="stylesheet" />
 <script src="js/jquery-1.7.1.js"></script>
@@ -26,12 +25,12 @@
 <!-- Notes: in a production environment, JS scripts and CSS should be concatenated. More scripts means more http requests which in turn means a slower site. Also comments would be removed to make the file as lean as possible. Finally, it's usually best to put links to all <script> files just before the final </body> tag. That way, the document has loaded before the JavaScript attempts to manipulate anything. However, I've left it in the head here so you see it! BF. -->
 </head>
 
-<body id="home">
+<body id="offline">
 
 <div id="wrapper"> 
 	<!-- the header and navigation -->
-	<header role="banner" class="group">
-		<a href="/"><div id="logo">And the winner is<span>n't...</span></div></a>
+	<header role="banner">
+		<a href="/"><div id="logo">And the winner is<span>n't...</span></div></a> 
 		<nav role="navigation"> 
 			<ul id="mainNav">
 				<li><a href="index.html">Why?</a></li>
@@ -41,16 +40,12 @@
 				<li><a href="video.html">Videos/clips</a></li>
 				<li><a href="3Dquiz.html">Quiz</a></li>
 			</ul>
-		</nav> 	
+		</nav> 	 	
 	</header> 
 	<!-- the content -->
 	<div id="content" role="main">
-		
-		<img class="oscarMain" src="img/oscar.png" alt="atwi_oscar" />
-		<h1>Every year <em>when I watch the Oscars I'm annoyed…</em></h1>
-		<p>that films like <b>King Kong</b>, <b>Moulin Rouge</b> and <b>Munich</b> get the statue whilst the <em>real</em> cinematic heroes lose out. Not very Hollywood is it?</p>
-<p><i>We’re here to put things right.</i></p>
-	<a class="button" href="#">these should have won <span>&raquo;</span></a>	
+		<h1>HTML5 <em>Offline Web Applications</em></h1>
+		<p>Oh, thanks to the power of HTML5 we're offline. Which is, you know, good. How to set this up is detailed in Chapter 4 of <a href="http://www.amazon.com/Responsive-Web-Design-HTML5-CSS3/dp/1849693188/ref=sr_1_8?ie=UTF8&qid=1334054932&sr=8-8">'Responsive web design with HTML5 & CSS3'</a> (within the Offline Web Applications section).</p>
 	</div>
 	<!-- the sidebar -->
 	<aside>
@@ -71,7 +66,7 @@
 	</aside> 
 	<!-- the footer -->
 	<footer role="contentinfo"> 
-		<p>Note: our opinion is absolutely correct. You are wrong, even if you think you are right. That’s a fact. Deal with it. <span> Made by <a href="http://benfrain.com">benfrain.com</a>. </span><span> Site code as <a href="/RWDHTML5CSS3_ATWI_CODE.zip">ZIP file</a></span></p> 
+		<p>Note: our opinion is absolutely correct. You are wrong, even if you think you are right. That’s a fact. Deal with it. <span> Made by <a href="http://benfrain.com">benfrain.com</a></span></p>
 	</footer> 
 
 </div> 
