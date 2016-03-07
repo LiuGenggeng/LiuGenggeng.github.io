@@ -1,43 +1,5 @@
-/*
-MMMMMMMMMMMMMMMdydNy:........:yNdydMMMMMMMMMMMMMMs
-MMMMMMMMMMMds/-..-+ossyddddysso+-..-/sdMMMMMMMMMMs
-MMMMMMMMms:..:oymmdyyssssssssyydmmyo:..:smMMsmMMMs
-MMMMMMNNo.-ydNhs+////////////////+shNdy-.oNN/dMMMs
-MMMMNo.:/ymho////////////////////////ohmy/:.-dMMMs
-MMMh-.-yNh+////////////////////-..`` //+hNy-.-hMMs
-MMh..:mmo/////////////////////`    .-////omm-..hMs
-Mh../Nd+////:..``-+//////////:    `///////+d/-..hs
-My-:Nm+/////.    -+/////////-.      `+/////+/h:-ys
-h+-hMo//////.    -/.````-//:      `::////////dh-+:
--.-Mm//////+.    ```     :+//-    .+/////////dM-..
-..oMd//////+.    .//.    .///-    .//////////dMo..
-..oMd//////+.    ://-    .///-    .//////////dMo..
--.-Mm//////+.    ://-    .///-    .//////////dM-..
-h+-hMo//////`    ://-    .//+-    -//////////dh-+:
-My-:Nm//////`    ://-    -//+-    -//////////h:-ys
-Mh../Nh////+`    .:-`   `///+-``..:////////h/-..hs
-MMh..:mmo///`    .`   `-/////////////////+mm-..hMs
-MMMh-.-ymy+/...--///://////////////////+ymy-.-hMMs
-MMMMNo.:/ymyo////////////////////////+ymy/:.-dMMMs
-MMMMMMNNo.-sddyo//////////////////oydds-.oNN/dMMMs
-MMMMMMMMms:..:oyddhyss++++++ssyhddyo:..:smMM+mMMMs
-MMMMMMMMMMMds/-..-+ossyddddysso+-..-/sdMMMMMMMMMMs
-MMMMMMMMMMMMMMMdydNy:........:yNdydMMMMMMMMMMMMMMs
-*/
 
-/* Some Notes:
 
--- This website has been coded by Ben Frain as a fictional case study to accompany the book 'Responsive Web Design with HTML5 and CSS3'. What do you mean you haven't ordered it yet? Get it here: http://www.amazon.com/Responsive-Web-Design-HTML5-CSS3/dp/1849693188/ref=sr_1_8?ie=UTF8&qid=1334054932&sr=8-8;
-
--- I've used Lea Verou's 'prefix free' JavaScript to add vendor prefixes to all my CSS3 declarations as and when they are needed. I do this here so the code is easier to read and I can use the W3C specified declarations. This wouldn't always make the most sense in a production environment. You'd typically want to add vendor prefixes like -moz-, -webkit- etc.
-
--- also, as you can see if you are reading this, the CSS isn't compressed and many declarations have been written 'long hand' to aid in reading the code. This isn't best practice in a production environment.
-
--- some people like to alphabetize their CSS declarations. I don't, sorry.
-
-*/
-
-/* Here is the normalize.css courtesy of Nicholas Gallagher (he's clever by the way). This section tries to 'normalize' the behaviour of various browsers */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -57,7 +19,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	font-family: inherit;
 	vertical-align: baseline;
 }
-/* remember to define focus styles! */
+
 :focus {
 	outline: 0;
 }
@@ -68,7 +30,7 @@ body {
 ol, ul {
 	list-style: none;
 }
-/* tables still need 'cellspacing="0"' in the markup */
+
 table {
 	border-collapse: separate;
 	border-spacing: 0;
@@ -86,7 +48,6 @@ blockquote, q {
 }
 
 
-/* self-clear floats - if you need them, this is my (current) favourite technique. More info: http://nicolasgallagher.com/micro-clearfix-hack/ */
 
 /* For modern browsers */
 .cf:before,
@@ -153,7 +114,6 @@ pre {
     font-style: normal;
 }
 
-/* This little bit is just for the warning message at the top of every page telling people it's a fictional website */
 
 #book {
 	display: none;
