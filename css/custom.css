@@ -1,0 +1,24 @@
+#navigation ul li { 
+	display: inline-block;
+}
+
+#content {
+	float: right;
+}
+
+#sidebar {
+	float: left;
+}
+
+.sideBlock {
+	width: 100%;
+}
+
+.sideBlock img {
+	max-width: 45%;
+	float:left;
+}
+
+.footer {
+	float: left;
+}
