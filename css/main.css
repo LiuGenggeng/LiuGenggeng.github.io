@@ -8,6 +8,7 @@ body{
 	background-color: #666;
 }
 #myFocus{
-	width: 70%;
-	height: 200px;
+	margin: 20% auto;
+	width: 560px;
+	height: 300px;
 }
