@@ -77,5 +77,5 @@ $.fn.mobileMenu = function(options) {
 };
 })(jQuery);
 $(document).ready(function(){
-	$('.sf-menu').mobileMenu();
-});
+	$('.main_nav').mobileMenu();
+  });
