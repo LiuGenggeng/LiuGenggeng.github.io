@@ -254,3 +254,21 @@ footer *{
 	margin:40px;
 	color: #6a6a6a;
 }
+@media only screen and (max-width: 767px) {
+	#footer .blog_address {
+		font-size: 16px !important;
+		padding:  10px 15px;
+	}
+	a#toTop {
+		width: 40px;
+		height: 40px;
+		left: 88%;
+	}
+}
+/*@media only screen and (max-width: 479px) {
+	a#toTop {
+		width: 40px;
+		height: 40px;
+		left: 88%;
+	}
+}*/
