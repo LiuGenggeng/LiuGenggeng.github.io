@@ -264,11 +264,23 @@ footer *{
 		height: 40px;
 		left: 88%;
 	}
-}
-/*@media only screen and (max-width: 479px) {
-	a#toTop {
-		width: 40px;
-		height: 40px;
-		left: 88%;
+	iframe#music_big {
+		display: none;
 	}
-}*/
+	iframe#music_sml {
+		display: block !important;
+	}
+}
+div.music_player {
+	position: fixed;
+	bottom: 110px;
+	right: -256px;
+}
+div.music_player:hover {
+	transition-duration: 2s;
+	right: 0px;
+}
+div.music_player iframe{
+	width: 330px;
+	height: 86px;
+}
