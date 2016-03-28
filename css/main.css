@@ -183,6 +183,7 @@ h1.logo{
 /*content*/
 div#content {
 	margin-bottom: 50px;
+	background: url(../images/background_3.jpg) no-repeat center fixed;
 }
 /*img*/
 div.shuffle-me {
