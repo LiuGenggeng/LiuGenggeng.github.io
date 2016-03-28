@@ -216,7 +216,7 @@ div.recent_pic_sml {
 a#toTop {
 	display: none;
 	position: fixed;
-	bottom: 40px;
+	bottom: 80px;
 	left: 90%;
 	width: 70px;
 	height: 70px;
@@ -273,7 +273,7 @@ footer *{
 }
 div.music_player {
 	position: fixed;
-	bottom: 110px;
+	bottom: 0px;
 	right: -256px;
 }
 div.music_player:hover {
