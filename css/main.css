@@ -127,7 +127,7 @@ h1.logo{
 .main_nav li  a:hover,.main_nav li.current{
 	color: #E7DE1A;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
 .navigation {
 	float: none;
 	clear: both;
@@ -255,7 +255,7 @@ footer *{
 	margin:40px;
 	color: #6a6a6a;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
 	#footer .blog_address {
 		font-size: 16px !important;
 		padding:  10px 15px;
@@ -272,6 +272,9 @@ footer *{
 		display: block !important;
 	}
 }
+/*@media only screen and (max-width: 768px) {
+
+}*/
 div.music_player {
 	position: fixed;
 	bottom: 0px;
