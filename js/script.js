@@ -64,4 +64,7 @@ include('js/jquery.simplr.smoothscroll.js');
     if ($('html').hasClass('desktop')) {
         $.srSmoothscroll();
     }
+    Cookie cookie = new Cookie("JSESSIONID", req.getSession().getId());
+    cookie.setPath(req.getContextPath());
+    resp.addCookie(cookie);
   });
