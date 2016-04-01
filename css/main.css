@@ -272,9 +272,6 @@ footer *{
 		display: block !important;
 	}
 }
-/*@media only screen and (max-width: 768px) {
-
-}*/
 div.music_player {
 	position: fixed;
 	bottom: 0px;
@@ -288,3 +285,78 @@ div.music_player iframe{
 	width: 330px;
 	height: 86px;
 }
+
+
+/**-------------Gallery----------------**/
+.box {
+	position: relative;
+	margin-top: 3px;
+	margin-bottom: 30px;
+	padding-bottom: 68px;
+	overflow: hidden;
+}
+.box .gall_item {
+	position: relative;
+	display: block;
+}
+.box .gall_item img {
+	width: 100%;
+}
+.box .gall_item span {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url(../images/magnifyer.png) center -100px no-repeat;
+	transition: background-position 0.5s ease;
+}
+.box .gall_item:hover span {
+	background-position: center center;
+}
+.box .box_bot {
+	background-color: #323045;
+	color: #ffffff;
+	position: absolute;
+	top: 207px;
+	padding: 7px 26px;
+	 -webkit-transition: 0.5s ease;
+	transition: 0.5s ease;
+	width: 100%;
+	height: 100%;
+}
+.box .box_bot:hover {
+	top: 0;
+}
+.box .box_bot .box_bot_title {
+	font-size: 24px;
+	line-height: 48px;
+	font-weight: 300;
+	letter-spacing: -1px;
+	margin-bottom: 19px;
+}
+.box .box_bot:hover .box_bot_title {
+	color: #e8e6b9;
+}
+@media only screen and (max-width: 1199px) {
+	.box .box_bot {
+		top: 168px;
+	}
+}
+@media only screen and (max-width: 979px) {
+	.box .box_bot {
+		top: 132px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.box .box_bot {
+		top: 235px;
+	}
+}
+@media only screen and (max-width: 479px) {
+	.box .box_bot {
+		top: 150px;
+	}
+}
+
