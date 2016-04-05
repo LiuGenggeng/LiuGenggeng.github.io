@@ -288,6 +288,11 @@ div.music_player iframe{
 
 
 /**-------------Gallery----------------**/
+h2.gallery,h2.blog {
+	text-align: left;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
 .box {
 	position: relative;
 	margin-top: 3px;
