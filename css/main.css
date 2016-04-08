@@ -1,4 +1,5 @@
 @import url(grid.css);
+@import url(font-awesome.css);
 @import url(http://fonts.useso.com/css?family=Open+Sans:400);
 @import url(http://fonts.useso.com/css?family=Open+Sans:700);
 @import url(http://fonts.useso.com/css?family=Open+Sans:300);
@@ -127,7 +128,7 @@ h1.logo{
 .main_nav li  a:hover,.main_nav li.current{
 	color: #E7DE1A;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 .navigation {
 	float: none;
 	clear: both;
@@ -183,7 +184,7 @@ h1.logo{
 /*content*/
 div#content {
 	padding-bottom: 50px;
-	background: url(../images/background_2.jpg) no-repeat center fixed;
+	background: url(../images/background_4.jpg) no-repeat center fixed;
 }
 /*img*/
 div.shuffle-me {
@@ -205,7 +206,7 @@ div.recent_pic_big {
 div.recent_pic_sml {
 	height: 243px;
 }
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 767px) {
 	div.recent_pic_big {
 		height:  250px;
 	}
@@ -255,7 +256,7 @@ footer *{
 	margin:40px;
 	color: #6a6a6a;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 	#footer .blog_address {
 		font-size: 16px !important;
 		padding:  10px 15px;
@@ -354,7 +355,7 @@ h2.gallery,h2.blog {
 		top: 132px;
 	}
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 	.box .box_bot {
 		top: 235px;
 	}
@@ -376,4 +377,14 @@ div.blog_container>img {
 	margin-bottom: 15px;
 	font-weight: 300;
 	letter-spacing: 29px;
+}
+div.blog_container table {
+	border-top: 1px solid rgba(50,48,69,0.49);
+	width: 100%;
+	line-height: 40px;
+	margin-top: 30px;
+}
+div.blog_container span.fa {
+	margin-right: 20px;
+	line-height: 40px;
 }

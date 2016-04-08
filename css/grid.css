@@ -346,7 +346,7 @@ table {
     margin-left: 100px;
   }
 }
-@media (min-width: 768px) and (max-width: 979px) {
+@media (min-width: 767px) and (max-width: 979px) {
   .row {
     margin-left: -20px;
     *zoom: 1;
@@ -444,7 +444,7 @@ table {
 .select-menu {
   display: none !important;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
     width: 420px;
     padding: 0 0px;
