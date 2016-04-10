@@ -1,9 +1,6 @@
 @import url(grid.css);
 @import url(font-awesome.css);
-@import url(http://fonts.useso.com/css?family=Open+Sans:400);
-@import url(http://fonts.useso.com/css?family=Open+Sans:700);
-@import url(http://fonts.useso.com/css?family=Open+Sans:300);
-@import url(http://fonts.useso.com/css?family=Pathway+Gothic+One);
+@import url(fonts.css);
 *{
 	font: inherit;
 	font-size: 100%;
