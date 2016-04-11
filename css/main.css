@@ -450,3 +450,81 @@ ul.catagory_ul li:hover span {
 		display: block;
 	}
 }
+/****     stydy.html     ****/
+div.article {
+	position: relative;
+	width: 100%;
+	background-color: #fff;
+	padding-top: 1px;
+}
+div.art-header {
+	position: relative;
+	width: 100%;
+}
+h1.art-title {
+	position: relative;
+	font-size: 26px;
+	font-weight: 400;
+	margin: 20px 0 10px;
+}
+h1.art-title a.art-title-link{
+	position: relative;
+	display: inline-block;
+	color: #555;
+	line-height: 1.2;
+}
+a.art-title-link::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #000;
+	left: 0;
+	bottom: 0;
+	visibility: hidden;
+	transform: scaleX(0);
+	transition:0.2s ease-in-out;
+}
+a.art-title-link:hover::before {
+	visibility: visible;
+	transform: scaleX(1);
+}
+div.art-meta {
+	margin-top: 5px;
+	margin-bottom: 20px;
+	color: #999;
+
+}
+div.art-meta span.art-time,
+div.art-meta span.art-category {
+	line-height: 1.2;
+	padding-right: 10px;
+	border-right: 2px solid #999;
+}
+div.art-meta span.art-category  a {
+	color: black;
+	text-decoration: underline;
+	font-size: 16px;
+}
+div.art-body {
+	width: 100%;
+}
+blockquote {
+	padding: 0 15px;
+	color: #666;
+	border-left: 4px solid #ddd;
+	margin-bottom: 20px;
+}
+div.art-more-link {
+	color: #666;
+}
+div.art-more-link a {
+	display: inline-block;
+	height: 20px;
+	line-height: 20px;
+	border-bottom: 2px solid #666;
+}
+div.art-more-link a:hover {
+	color: #000;
+	border-bottom-color: #222; 
+}
