@@ -97,14 +97,10 @@ div.content {
     padding-bottom: 200px;
 }
 div.content header {
-
     position: relative;
     overflow: hidden;
-<<<<<<< HEAD
-    padding: 20px 74px 10px 60px;
-=======
     padding: 20px 68px 10px 60px;
->>>>>>> 99a077b885c8fbb09d25ea3a76824bfa31b7fc00
+
 }
 div.content header h2 {
     font-weight: bold;
@@ -120,19 +116,7 @@ span.unlogin a{
     font-weight: bold;
     margin-bottom: 10px;
 }
-<<<<<<< HEAD
-=======
 
-a.selectBtn {
-    float: right;
-    display: block;
-    width: 25px;
-    height: 29px;
-    background-image: url('../images/selectBtn.png');
-    background-repeat: no-repeat;
-    background-position: 0px 3px;
-}
->>>>>>> 99a077b885c8fbb09d25ea3a76824bfa31b7fc00
 .navbar {
     float: left;
     display: block;
