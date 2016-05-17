@@ -1,0 +1,42 @@
+a.myAccount {
+    background-image: url('../images/myAccount_white.png');
+    background-color: #0959a3;
+    color: #ffffff !important;
+}
+div.passWord {
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 20px;
+    color: #0a57a3;
+}
+div.passWord p {
+    line-height: 48px;
+}
+div.passWord input {
+    width: 210px;
+    height: 32px;
+}
+div.passWord input {
+    margin-left: 10px;
+}
+div.passWord span.passwordName {
+    display: inline-block;
+    width: 75px;
+}
+input.finashChange,input.reset {
+    width: 120px !important;
+    height: 44px !important;
+    cursor: pointer;
+    position: relative;
+    left: 20%;
+    margin-top: 40px;
+    color: #ffffff;
+    font-size: 15px;
+    background-color: #1fbba6;
+    border: none;
+    border-radius: 5px;
+}
+input.reset {
+    left: 40%;
+}

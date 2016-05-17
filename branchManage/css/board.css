@@ -1,0 +1,92 @@
+
+
+a.orderManage {
+    background-image: url('../images/orderInquiry_gray.png');
+    background-repeat: no-repeat;
+    background-position: 47px 17px;
+}
+a.orderManage:hover {
+    background-image: url('../images/orderInquiry_white.png');
+    color: #ffffff !important;
+}
+a.parameterSet {
+    background-image: url('../images/parameterSet_gray.png');
+    background-repeat: no-repeat;
+    background-position: 47px 17px;
+}
+a.parameterSet:hover {
+    background-image: url('../images/parameterSet_white.png');
+    color: #ffffff !important;
+}
+a.staffManage {
+    background-image: url('../images/staffManage_gray.png');
+    background-repeat: no-repeat;
+    background-position: 47px 17px;
+}
+a.staffManage:hover {
+    background-image: url('../images/staffManage_white.png');
+    color: #ffffff !important;
+}
+a.myAccount {
+    background-image: url('../images/myAccount_gray.png');
+    background-repeat: no-repeat;
+    background-position: 47px 17px;
+}
+a.myAccount:hover {
+    background-image: url('../images/myAccount_white.png');
+    color: #ffffff !important;
+}
+a.annoucement {
+    background-image: url('../images/announcement_white.png');
+    background-color: #0959a3;
+    color: #ffffff !important;
+    background-repeat: no-repeat;
+    background-position: 47px 17px;
+}
+
+
+.content .boardList{
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    margin-left: 60px;
+    width: 350px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 1);
+}
+.content .boardList:first-child{
+
+    margin-top: 120px;
+}
+.content .boardList .listTitle{
+    display: block;
+    width: 330px;
+    min-height: 50px;
+    border-bottom: 1px solid #d6d6d6;
+    padding: 10px 10px 20px;
+
+    color: #0858a2;
+}
+
+.content .boardList .listContent{
+    display: block;
+    width: 300px;
+    height: 170px;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+.content .boardList .boardBtn{
+    position: relative;
+    float: right;
+    display: block;
+    margin-right: -100px;
+    width: 80px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #1fbba6;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+}
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>港华燃气订单查询</title>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/orderInquiry.css">
+    <link rel="stylesheet" type="text/css" href="css/jindutiao.css">
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/avalon.js"></script>
+    <script type="text/javascript" src="js/ordInq_braSta.js"></script>
+    <script type="text/javascript" src="js/echarts.min.js"></script>
+</head>
+<body>
+<div class="wrapper" ms-controller="Gas">
+    <div class="sidebar">
+        <div class="logo"></div>
+        <nav class="manageList">
+            <ul>
+                <li><a href="#" class="orderInquiry">订单查询<span> > </span></a></li>
+                <li><a href="staMan_regMan.html" class="staffManage">人员管理<span> > </span></a></li>
+                <li><a href="myAct_myInf.html" class="myAccount">我的账号<span> > </span></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <header>
+            <h2>港华燃气集团{{regionalName}}</h2>
+            <span class="unlogin"><a href="#">退出登录</a></span>
+        </header>
+        <nav class="quiryList">
+            <ul>
+                <li><a href="ordInq_regSta.html" id="regionalStatistic">区域统计</a></li>
+                <li><a href="#" id="branchStatistic" class="selected">分公司统计</a></li>
+                <li><a href="ordInq_braRank.html" id="branchRank">分公司排名</a></li>
+            </ul>
+        </nav>
+        <!--这里有2块,分别是集团统计，区域统计-->
+        <div class="showArea">
+            <div class="regionalStatisticDiv">
+                <span class="crumbs">区域管理 > 订单查询 > 分公司统计</span>
+                <div class="setCompany">
+                    <form>
+                        分公司<select class="companyName"><option value="1">西南地区</option><option value="1">西南地区</option>
+                        <option value="1">西南地区</option><option value="1">西南地区</option></select>
+                        <input type="submit" class="companySubmit" value="统计"/>
+                    </form>
+                </div>
+                <div class="status">
+                    <ul>
+                        <li class="kaiFa">开发中<br><span class="num">378</span></li>
+                        <li class="anZhuang">安装中<br><span class="num">378</span></li>
+                        <li class="wanCheng">已完成<br><span class="num">378</span></li>
+                        <li class="quXiao">已取消<br><span class="num">378</span></li>
+                    </ul>
+                </div>
+                <div class="rate">
+                    <h3>比率</h3>
+                    <div id="braRatePic" style="width: 444px;height: 360px;"></div>
+                </div>
+                <div class="baozhuangTime">
+                    <h3>区域报装时长</h3>
+                    <div class="progress progress-striped active" >
+                        <div class="bar" style="width: 90%;"></div>
+                    </div>
+                    <h4>最长时长:</h4>
+
+                    <div class="progress progress-striped active" >
+                        <div class="bar" style="width: 50%;"></div>
+                    </div>
+                    <h4>最短时长:</h4>
+
+                    <div class="progress progress-striped active" >
+                        <div class="bar" style="width: 65%;"></div>
+                    </div>
+                    <h4>平均时长:</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,211 @@
+a.orderInquiry {
+    background-image: url('../images/orderInquiry_white.png');
+    background-color: #0959a3;
+    color: #ffffff !important;
+}
+
+/*区域统计部分*/
+div.regStatisticDiv {
+    overflow: hidden;
+}
+div.setCompany {
+    margin-top: 30px;
+    padding: 10px 27px 10px 17px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+div.setCompany form{
+    color: #949494;
+    text-align: center;
+    font-weight: bold;
+}
+select.companyName {
+    border-radius: 3px;
+    margin-left: 25px;
+    width: 290px;
+    height: 35px;
+}
+input.companySubmit{
+    float: right;
+    cursor: pointer;
+    color: #ffffff;
+    width: 70px;
+    height: 32px;
+    background-color: #1fbca6;
+    border: 0;
+    border-radius: 3px;
+}
+div.status {
+    margin-top: 30px;
+}
+div.status ul {
+    overflow: hidden;
+}
+
+div.status ul li {
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #ffffff;
+    float: left;
+    padding: 5px 119px 5px 17px;
+    background-repeat: no-repeat;
+    background-position: 110px 17px;
+    border: 1px solid #cccccc;
+}
+div.status ul li:nth-child(n+2) {
+    margin-left: 31.5px;
+}
+li.kaiFa {
+    background-image: url('../images/kaifazhong.png');
+}
+li.anZhuang {
+    background-image: url('../images/anzhuangzhong.png');
+}
+li.wanCheng {
+    background-image: url('../images/wancheng.png');
+}
+li.quXiao {
+    background-image: url('../images/quxiao.png');
+}
+
+span.num {
+    font-weight: normal;
+    color: #cccccc;
+    font-size: 39px;
+}
+div.rate ,div.baozhuangTime {
+    padding: 29px 34px 0 40px;
+    float: left;
+    width:368px;
+    height: 368px;
+    background-color: #ffffff !important;
+    margin-top: 30px;
+    border: 1px solid #cccccc;
+}
+div.rate {
+    width: 444px;
+    padding: 29px 0 0 0;
+}
+div.baozhuangTime {
+    margin-left: 31px;
+}
+div.baozhuangTime h3 ,div.rate h3{
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 34px;
+}
+div.rate h3 {
+    margin-bottom: 0;
+}
+div.baozhuangTime h4 {
+    color: #8a8a8a;
+    font-weight: bold;
+    margin: 3px 0 30px 0;
+}
+/*分公司统计部分*/
+div.braRankDiv {
+    margin-top: 30px;
+}
+div.successRank,div.installRank {
+    width: 425px;
+    display: inline-block;
+}
+div.installRank {
+    margin-left: 50px;
+}
+div.rankHead {
+    border: 1px solid #cccccc;
+    padding: 15px 0;
+    letter-spacing: 3px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #ffffff;
+    text-align: center;
+    color: #949494;
+
+}
+div.showRank {
+    border: 1px solid #cccccc;
+    margin-top: 10px;
+    padding: 10px 23px;
+    padding-right: 0;
+    background-color: #ffffff;
+}
+p.topThree {
+    height: 50px;
+}
+p.topThree span.Ranking{
+    display: inline-block;
+    width: 20px;
+    font-family: hanyilingxin;
+    font-size: 40px;
+    font-weight: bold;
+}
+p.topThree span.company {
+    position: relative;
+    top: -10px;
+    vertical-align:middle;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 3px;
+    color: #ffffff;
+    padding: 5px 11px;
+}
+p.topThree span.number {
+    color: #c6c6c6;
+    font-size: 35px;
+}
+p.topThree:nth-child(1) span.Ranking {
+    color: #e04333;
+}
+p.topThree:nth-child(2) span.Ranking {
+    color: #eec023;
+}
+p.topThree:nth-child(3) span.Ranking {
+    color: #5aa3df;
+}
+p.topThree:nth-child(1) span.company {
+    background-color: #e04333;
+    width: 240px;
+}
+p.topThree:nth-child(2) span.company {
+    background-color: #eec023;
+}
+p.topThree:nth-child(3) span.company {
+    background-color: #5aa3df;
+}
+p.afterThree {
+    width: 180px;
+    display: inline-block;
+    height: 25px;
+}
+p.afterThree:nth-child(2n-1) {
+    margin-left: 15px;
+}
+p.afterThree:nth-child(5) {
+    margin-top: 30px;
+}
+p.afterThree span.Ranking{
+    display: inline-block;
+    width: 20px;
+    font-family: hanyilingxin;
+    font-size: 35px;
+    font-weight: bold;
+    color: #30b594;
+}
+p.afterThree span.company {
+    color: #8c8c8c;
+    position: relative;
+    top: -10px;
+    vertical-align:middle;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 5px 11px;
+}
+p.afterThree span.number {
+    color: #c6c6c6;
+    font-size: 25px;
+}

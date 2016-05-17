@@ -1,0 +1,286 @@
+/*清除所有默认样式*/
+/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td /* table elements 表格元素 */ {
+    margin: 0;
+    padding: 0;
+}
+/** 设置默认字体 **/
+body,
+button, input, select, textarea /* for ie */ {
+    font: 14px/1.5 tahoma, \5b8b\4f53, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal;}
+address, cite, dfn, em, var { font-style: normal; } /* 将斜体扶正 */
+code, kbd, pre, samp { font-family: courier new, courier, monospace; } /* 统一等宽字体 */
+small { font-size: 12px; } /* 小于 12px 的中文很难阅读, 让 small 正常化 */
+/** 重置列表元素 **/
+ul, ol { list-style: none; }
+/** 重置文本格式元素 **/
+a { text-decoration: none; }
+sup { vertical-align: text-top; } /* 重置, 减少对行高的影响 */
+sub { vertical-align: text-bottom; }
+/** 重置表单元素 **/
+legend { color: #000; } /* for ie6 */
+fieldset, img { border: 0; } /* img 搭车：让链接里的 img 无边框 */
+button, input, select, textarea { font-size: 100%; } /* 使得表单元素在 ie 下能继承字体大小 */
+/* 注：optgroup 无法扶正 */
+/** 重置表格元素 **/
+table { border-collapse: collapse; border-spacing: 0; }
+/* 重置 HTML5 元素 */
+article, aside, details, figcaption, figure, footer,header, menu, nav, section,
+summary, time, mark, audio, video {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+mark { background: #ff0; }
+*{
+    transition-duration: 0.5s;
+    font-family: '微软雅黑 Regular', '微软雅黑';
+}
+
+/*公共样式*/
+/*引用汉仪菱心体简字体*/
+@font-face {
+    font-family: hanyilingxin;
+    src: url('../fonts/汉仪菱心体简.ttf');
+}
+
+.wrapper {
+
+    width: 1366px;
+    min-width: 1366px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+div.sidebar {
+    position: fixed;
+    width: 314px;
+    height: 100%;
+    background-color: #31333a;
+    float: left;
+    z-index: 100;
+}
+.logo {
+    width: 314px;
+    height: 250px;
+    background-color: #29282e;
+    background-image: url('../images/logo.png');
+    background-repeat: no-repeat;
+    background-position: 20px 30px;
+}
+nav.manageList {
+    background-color: #31333a;
+}
+nav.manageList ul li a{
+    padding: 0 22px 0 102px;
+    height: 67px;
+    line-height: 67px;
+    display: block;
+    color: #95a1aa;
+    font-size: 18px;
+    border-bottom: 1px solid #514C4C;
+}
+nav.manageList ul li a span {
+    float: right;
+}
+
+div.content {
+    width: 1052px;
+    height: 100%;
+    float: right;
+    background-color: #f1f1f1;
+    padding-bottom: 200px;
+}
+div.content header {
+
+    position: relative;
+    overflow: hidden;
+<<<<<<< HEAD
+    padding: 20px 74px 10px 60px;
+=======
+    padding: 20px 68px 10px 60px;
+>>>>>>> 99a077b885c8fbb09d25ea3a76824bfa31b7fc00
+}
+div.content header h2 {
+    font-weight: bold;
+    width: 677px;
+    float: left;
+    font-size: 36px;
+    font-family: hanyilingxin;
+    color: #0858a2;
+}
+span.unlogin a{
+    float: right;
+    color: #0858a2 !important;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+<<<<<<< HEAD
+=======
+
+a.selectBtn {
+    float: right;
+    display: block;
+    width: 25px;
+    height: 29px;
+    background-image: url('../images/selectBtn.png');
+    background-repeat: no-repeat;
+    background-position: 0px 3px;
+}
+>>>>>>> 99a077b885c8fbb09d25ea3a76824bfa31b7fc00
+.navbar {
+    float: left;
+    display: block;
+    width: 1052px;
+    height: 60px;
+    background-color: #ffffff;
+    border-right: 1px solid #f1f1f1;
+    position: relative;
+    overflow: hidden;
+}
+.navbar li a {
+    display: block;
+    padding: 17px 60px;
+    color: #8a8a8a;
+    font-size: 18px;
+    font-weight: bold;
+}
+.navbar li {
+    float: left;
+    border-right: 2px solid #f1f1f1;
+}
+.selected {
+    color: #0858a2 !important;
+}
+.breadCrummps {
+    position: relative;
+    float: left;
+    margin-top: 20px;
+    margin-left: 60px;
+    display: block;
+    width: 500px;
+    height: 19px;
+    font-weight: 700;
+    font-size: 14px;
+    text-align:left;
+    font-style: normal;
+    color: #999999;
+}
+
+.list {
+    position: relative;
+    float: left;
+    display: block;
+    margin-top: 10px;
+    margin-left: 60px;
+    clear: both;
+}
+
+
+
+
+th {
+    font-weight: 900;
+    color: #1465ad;
+    border-right: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6;
+    border-top: 1px solid #d6d6d6;
+    padding: 5px 8px;
+}
+
+table .listleft {
+
+    border-left: 1px solid #d6d6d6;
+
+}
+
+td {
+    border-right: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6;
+    font-size:14px;
+    padding: 5px 8px;
+}
+
+
+/*_pwdChange*/
+.modifyButton {
+    cursor: pointer;
+    position: relative;
+    float: left;
+    display: block;
+    width: 90px;
+    height: 40px;
+    line-height: 40px;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    color: #ffffff;
+}
+.completeModifyButton{
+    background-color: #1fbba6;
+}
+.cancelModifyButton {
+    background-color: #808080;
+}
+
+/*infoChange*/
+
+.content .infoChange_info {
+    position: relative;
+    display: block;
+    margin-top: 15px;
+    margin-left: 60px;
+    padding-top: 10px;
+    clear: both;
+    width: 910px;
+    height: 150px;
+}
+.infoChange_info {
+    color: #0858a2;
+    font-size: 14px;
+}
+.infoChange_info .otherInfo{
+    color: #0858a2;
+    font-size: 14px;
+    float: left;
+}
+.infoChange_info p{
+    padding: 5px 0px;
+}
+.infoChange_info span{
+    color: #000000;
+}
+.infoChange_info a span{
+    color: #fff;
+}
+.infoChange_info textarea {
+    resize: none;
+    height: 150px;
+    width: 700px;
+}
+.infoChange_info input[type=text]{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 209px;
+    height: 25px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #000000;
+    text-align: left;
+}
+
+.infoChange_info .completeModifyButton {
+    margin:70px 35px 0 350px;
+}
+.infoChange_info .modifyPasswordButton {
+    margin:70px 5px 0 35px;
+    background-color: #1fbba6;
+}
+

@@ -1,0 +1,141 @@
+a.orderInquiry {
+    background-image: url('../images/orderInquiry_white.png');
+    background-color: #0959a3;
+    color: #ffffff !important;
+}
+
+/*集团统计部分*/
+div.groupStatisticDiv {
+    overflow: hidden;
+}
+div.setTime {
+    margin-top: 17px;
+    padding: 10px 27px 10px 17px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+input.groupStarttime ,input.groupEndtime{
+    border: 1px solid #8a8a8a;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 163px;
+    margin: 1px 86px 1px 25px;
+}
+@-moz-document url-prefix() {
+    input.groupStarttime ,input.groupEndtime {
+        width: 164px;
+    }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+    input.groupStarttime ,input.groupEndtime {
+        width: 164px;
+    }
+}
+input.groupSubmit ,input.regionalSubmit{
+    cursor: pointer;
+    color: #ffffff;
+    width: 70px;
+    height: 32px;
+    background-color: #1fbca6;
+    border: 0;
+    border-radius: 3px;
+}
+div.status {
+    margin-top: 8px;
+}
+div.status ul {
+    overflow: hidden;
+}
+
+div.status ul li {
+    width: 68.68px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #ffffff;
+    float: left;
+    padding: 5px 119px 5px 17px;
+    background-repeat: no-repeat;
+    background-position: 110px 17px;
+    border: 1px solid #cccccc;
+}
+div.status ul li:nth-child(n+2) {
+    margin-left: 31.5px;
+}
+li.kaiFa {
+    background-image: url('../images/kaifazhong.png');
+}
+li.anZhuang {
+    background-image: url('../images/anzhuangzhong.png');
+}
+li.wanCheng {
+    background-image: url('../images/wancheng.png');
+}
+li.quXiao {
+    background-image: url('../images/quxiao.png');
+}
+
+span.num {
+    font-weight: normal;
+    color: #cccccc;
+    font-size: 39px;
+}
+div.rate ,div.baozhuangTime {
+    padding: 29px 34px 0 40px;
+    float: left;
+    width:368px;
+    height: 368px;
+    background-color: #ffffff !important;
+    margin-top: 30px;
+    border: 1px solid #cccccc;
+}
+div.rate {
+    width: 444px;
+    padding: 29px 0 0 0;
+}
+div.baozhuangTime {
+    margin-left: 31px;
+}
+div.baozhuangTime h3 ,div.rate h3{
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 34px;
+}
+div.rate h3 {
+    margin-bottom: 0;
+}
+div.baozhuangTime h4 {
+    color: #8a8a8a;
+    font-weight: bold;
+    margin: 3px 0 30px 0;
+}
+/*区域统计部分*/
+div.regionalStatisticDiv {
+    overflow: hidden;
+}
+select.regionalName, input.regionalStarttime, input.regionalEndtime {
+    border: 1px solid #8a8a8a;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 163px;
+    margin:0 25px 0 15px;
+}
+select.regionalName {
+    width: 146px;
+    border-radius: 3px;
+    padding: 7px 10px;
+}
+@-moz-document url-prefix() {
+    input.regionalStarttime, input.regionalEndtime {
+        width: 164px;
+    }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+    input.regionalStarttime, input.regionalEndtime {
+        width: 164px;
+    }
+}

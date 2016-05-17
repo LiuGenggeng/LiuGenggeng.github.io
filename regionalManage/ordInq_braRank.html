@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>港华燃气订单查询</title>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/orderInquiry.css">
+    <link rel="stylesheet" type="text/css" href="css/jindutiao.css">
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/avalon.js"></script>
+    <script type="text/javascript" src="js/ordInq_braRank.js"></script>
+</head>
+<body>
+<div class="wrapper" ms-controller="Gas">
+    <div class="sidebar">
+        <div class="logo"></div>
+        <nav class="manageList">
+            <ul>
+                <li><a href="#" class="orderInquiry">订单查询<span> > </span></a></li>
+                <li><a href="staMan_regMan.html" class="staffManage">人员管理<span> > </span></a></li>
+                <li><a href="myAct_myInf.html" class="myAccount">我的账号<span> > </span></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <header>
+            <h2>港华燃气集团{{regionalName}}</h2>
+            <span class="unlogin"><a href="#">退出登录</a></span>
+        </header>
+        <nav class="quiryList">
+            <ul>
+                <li><a href="ordInq_regSta.html">区域统计</a></li>
+                <li><a href="ordInq_braSta.html">分公司统计</a></li>
+                <li><a href="#" id="branchRank"  class="selected">分公司排名</a></li>
+            </ul>
+        </nav>
+        <div class="showArea">
+                <span class="crumbs">区域管理 > 订单查询 > 分公司排名</span>
+                <div class="braRankDiv">
+                    <div class="successRank">
+                        <div class="rankHead">分公司成功订单数排名</div>
+                        <div class="showRank">
+                            <p ms-repeat="successRankList" class="topThree" ms-if-loop="$index<3">
+                                <span class="Ranking">{{$index+1}}</span>
+                                <span class="company"  ms-attr-id="success{{$index+1}}">{{el.company}}</span>
+                                <span class="number">{{el.number}}</span>
+                            </p>
+                            <p ms-repeat="successRankList" class="afterThree" ms-if-loop="$index>=3">
+                                <span class="Ranking">{{$index+1}}</span>
+                                <span class="company">{{el.company}}</span>
+                                <span class="number">{{el.number}}</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="installRank">
+                        <div class="rankHead">分公司平均报装时长排名</div>
+                        <div class="showRank">
+                            <p ms-repeat="installRankList" class="topThree" ms-if-loop="$index<3">
+                                <span class="Ranking">{{$index+1}}</span>
+                                <span class="company" ms-attr-id="install{{$index+1}}">{{el.company}}</span>
+                                <span class="number">{{el.number}}</span>
+                            </p>
+                            <p ms-repeat="installRankList" class="afterThree" ms-if-loop="$index>=3">
+                                <span class="Ranking">{{$index+1}}</span>
+                                <span class="company">{{el.company}}</span>
+                                <span class="number">{{el.number}}</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

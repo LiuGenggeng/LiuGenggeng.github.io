@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>分公司人员管理人员密码修改</title>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/peoMan.css">
+    <link rel="stylesheet" type="text/css" href="css/pwdChange.css">
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/avalon.js"></script>
+    <script type="text/javascript" src="js/peoMan_pwdChange.js"></script>
+</head>
+<body>
+<div class="wrapper" ms-controller="Gas">
+	<div class="sidebar">
+		 <div class="logo"></div>
+		 <nav class="manageList">
+		     <ul>
+                 <li><a href="ordInq_list.html" class="orderManage">订单管理<span> > </span></a></li>
+                 <li><a href="paraSet_hot.html" class="parameterSet">参数设定<span> > </span></a></li>
+                 <li><a href="peoMan_branch.html" class="staffManage">人员管理<span> > </span></a></li>
+                 <li><a href="myInfo_infoChange.html" class="myAccount">我的账号<span> > </span></a></li>
+                 <li><a href="board_detailCheck.html" class="annoucement">公司公告<span> > </span></a></li>
+		     </ul>
+		 </nav>
+	</div>
+	<div class="content">
+		<header>
+			<h2>港华燃气集团{{branchName}}</h2>
+			<span class="unlogin"><a href="#">退出登录</a></span>
+		</header>
+        <div class="navbar">
+            <ul>
+                <li><a href="peoMan_branch.html"    id="peoCheck"  class="selected">人员查看</a></li>
+                <li><a href="peoMan_authorize.html" id="lowerAuthority">下级授权</a></li>
+            </ul>
+        </div>
+        <div class="breadCrummps">
+            <span>分公司列表 &gt; 人员管理 &gt; 修改密码</span>
+        </div>
+
+        <div class="passwdInfo infoChange_info">
+            <form>
+                <p>业务员编号 :&nbsp&nbsp<span id="salesmanNum">{{staffId}}</span></p>
+                <p>业务员姓名 :&nbsp&nbsp<span id="salesmanName">{{staffName}}</span></p>
+                <p>新密码  &nbsp  &nbsp &nbsp &nbsp:&nbsp <input id="newpsd" type="password"/></p>
+                <p>旧密码  &nbsp  &nbsp &nbsp &nbsp:&nbsp <input id="oldpsd" type="password"/></p>
+                <button class="completeModifyButton modifyButton" href="#">完成修改</button>
+                <button class="cancelModifyButton modifyButton" href="#">取消修改</button>
+            </form>
+
+        </div>
+	</div>
+</div>
+</body>
+</html>

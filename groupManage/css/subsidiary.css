@@ -1,0 +1,47 @@
+a.staffManage {
+    background-image: url('../images/staffManage_white.png');
+    background-color: #0959a3;
+    color: #ffffff !important;
+}
+div.companyDiv {
+    position: relative;
+    margin-top: 20px;
+    color: #0a57a3;
+}
+div.companyDiv>div{
+    overflow: hidden;
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+}
+div.companyName {
+    float: left;
+    display: inline-block;
+    width: 60px;
+}
+div.comContent {
+    float: left;
+    color: #000;
+    margin-left: 5px;
+    display: inline-block;
+}
+div.businessPer {
+    width: 262px;
+    background-color: #ffffff;
+    display: inline-block !important;
+    margin-left: 50px;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    box-shadow: 2px 2px 3px #aaaaaa;
+}
+div.businessPer:nth-child(3n-1) {
+    margin-left: 0;
+}
+div.businessPer p{
+    padding-left: 25px;
+}
+p.perName {
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 1px solid #346e6e;
+}

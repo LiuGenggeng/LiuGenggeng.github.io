@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>港华燃气订单查询</title>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/myAccount.css">
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/avalon.js"></script>
+    <script type="text/javascript" src="js/myAct_chaPas.js"></script>
+    <script type="text/javascript" src="js/jquery.validate-1.13.1.js"></script>
+</head>
+<body>
+<div class="wrapper" ms-controller="Gas">
+    <div class="sidebar">
+        <div class="logo"></div>
+        <nav class="manageList">
+            <ul>
+                <li><a href="ordInq_regSta.html" class="orderInquiry">订单查询<span> > </span></a></li>
+                <li><a href="staMan_regMan.html" class="staffManage">人员管理<span> > </span></a></li>
+                <li><a href="#" class="myAccount">我的账号<span> > </span></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <header>
+            <h2>港华燃气集团{{regionalName}}</h2>
+            <span class="unlogin"><a href="#">退出登录</a></span>
+            <div class="select">
+                <input type="text" class="name" id="name" placeholder="请输入要查询的关键字"/><a href="#" class="selectBtn"></a>
+            </div>
+        </header>
+        <nav class="accountList">
+            <ul>
+                <li><a href="myAct_myInf.html" id="myInformation">我的信息</a></li>
+                <li><a href="#" id="changePassword" class="selected">密码修改</a></li>
+            </ul>
+        </nav>
+        <!--这里有2块，我的信息，密码修改-->
+        <div class="showArea">
+            <div class="myInformationDiv">
+                <span class="crumbs">区域管理 > 我的账号 > 密码修改</span>
+            </div>
+            <div class="changePasswordDiv">
+                <div class="passWord">
+                    <form>
+                        <p><span class="passwordName">区域编号</span>:<span style="margin-left: 10px">{{quyuId}}</span></p>
+                        <p><span class="passwordName">区域名称</span>:<span style="margin-left: 10px">{{name}}</span></p>
+                        <p><span class="passwordName">旧密码</span>:<input type="password" name="oldPass" /></p>
+                        <p><span class="passwordName">新密码</span>:<input type="password" class="newPass" name="newPass"/></p>
+                        <p><span class="passwordName">确认密码</span>:<input type="password" name="reNewPass"/></p>
+                        <input type="submit" class="finashChange" value="完成修改" />
+                        <input type="reset"  class="reset" value="取消修改" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

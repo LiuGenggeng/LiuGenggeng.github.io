@@ -1,0 +1,210 @@
+a.staffManage {
+    background-image: url('../images/staffManage_white.png');
+    background-color: #0959a3;
+    color: #ffffff !important;
+}
+div.regional {
+    margin-top: 17px;
+    background-color: #ffffff;
+    float: left;
+    width: 430px;
+    border: 1px solid #cccccc;
+}
+div.regional:hover {
+    box-shadow: 2px 2px 3px #aaaaaa;
+}
+div.regional:nth-child(even) {
+    margin-left: 50px;
+}
+div.regional p {
+    padding-left: 27px;
+}
+div.regional p:nth-child(n+2) {
+    color: #0e0e0e;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+}
+p.regionalName {
+    height: 45px;
+    line-height: 45px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #346e6e;
+    border-bottom: 1px solid #346e6e;
+}
+a.seeCompany {
+    color: #346e6e;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+}
+div.shouQuan {
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 20px;
+    color: #0a57a3;
+}
+div.shouQuan p {
+    line-height: 48px;
+}
+div.shouQuan input {
+    width: 210px;
+    height: 32px;
+}
+div.shouQuan input,div.shouQuan textarea {
+    margin-left: 10px;
+}
+div.shouQuan span.shouQuanName {
+    display: inline-block;
+    width: 75px;
+}
+button.subShouquan{
+    cursor: pointer;
+    position: relative;
+    left: 40%;
+    margin-top: 10px;
+    padding: 11px 20px;
+    color: #ffffff;
+    font-size: 15px;
+    background-color: #1fbba6;
+    border: none;
+    border-radius: 5px;
+}
+/*区域资料*/
+div.regionalDiv {
+    position: relative;
+    margin-top: 20px;
+    color: #0a57a3;
+}
+div.regionalDiv>div{
+    overflow: hidden;
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+}
+div.regionalName {
+    float: left;
+    display: inline-block;
+    width: 60px;
+}
+div.regContent {
+    float: left;
+    color: #000;
+    margin-left: 5px;
+    display: inline-block;
+}
+div.businessPer {
+    color: #000;
+    width: 262px;
+    background-color: #ffffff;
+    display: inline-block !important;
+    margin-left: 50px;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    box-shadow: 2px 2px 3px #aaaaaa;
+}
+div.businessPer:nth-child(3n-1) {
+    margin-left: 0;
+}
+div.businessPer p{
+    padding-left: 25px;
+}
+p.perName {
+    color: #0a57a3;
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 1px solid #346e6e;
+}
+button.viewData {
+    display: block;
+    color: #ffffff;
+    position: relative;
+    margin: 10px auto;
+    width: 105px !important;
+    height: 40px !important;
+    cursor: pointer;
+    background-color: #1fbba6;
+    border: none;
+    border-radius: 5px;
+}
+button.changeData,button.changePassword,button.subChange{
+    width: 105px !important;
+    height: 40px !important;
+    cursor: pointer;
+    position: relative;
+    left: 30%;
+    margin-top: 40px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #1fbba6;
+    border: none;
+    border-radius: 5px;
+}
+button.changePassword {
+    left: 35%;
+}
+/*区域资料修改页面*/
+div.dataChange {
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 20px;
+    color: #0a57a3;
+}
+div.dataChange p {
+    line-height: 48px;
+}
+div.dataChange input {
+    width: 210px;
+    height: 32px;
+}
+div.dataChange input,div.dataChange textarea {
+    margin-left: 10px;
+}
+div.dataChange span.changeName {
+    display: inline-block;
+    width: 75px;
+}
+/*区域账号密码修改*/
+div.passWord {
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 20px;
+    color: #0a57a3;
+}
+div.passWord p {
+    line-height: 48px;
+}
+div.passWord input {
+    width: 210px;
+    height: 32px;
+}
+div.passWord input {
+    margin-left: 10px;
+}
+div.passWord span.passwordName {
+    display: inline-block;
+    width: 75px;
+}
+input.finashChange,input.reset {
+    width: 120px !important;
+    height: 44px !important;
+    cursor: pointer;
+    position: relative;
+    left: 30%;
+    margin-top: 40px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #1fbba6;
+    border: none;
+    border-radius: 5px;
+}
+input.reset {
+    left: 35%;
+    background-color: #d6d9d9;
+}

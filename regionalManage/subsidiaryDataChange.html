@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>港华燃气订单查询</title>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/subsidiary.css">
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/avalon.js"></script>
+    <script type="text/javascript" src="js/subsidiaryDataChange.js"></script>
+</head>
+<body>
+<div class="wrapper" ms-controller="Gas">
+    <div class="sidebar">
+        <div class="logo"></div>
+        <nav class="manageList">
+            <ul>
+                <li><a href="ordInq_regSta.html" class="orderInquiry">订单查询<span> > </span></a></li>
+                <li><a href="#" class="staffManage">人员管理<span> > </span></a></li>
+                <li><a href="myAct_myInf.html" class="myAccount">我的账号<span> > </span></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <header>
+            <h2>港华燃气集团{{regionalName}}</h2>
+            <span class="unlogin"><a href="#">退出登录</a></span>
+        </header>
+        <nav class="staffList">
+            <ul>
+                <li><a href="staMan_regMan.html" id="regionalManage" class="selected">区域管理</a></li>
+                <li><a href="staMan_lowAut.html" id="lowerAuthority">下级授权</a></li>
+            </ul>
+        </nav>
+        <div class="showArea">
+            <div class="dataChangeDiv">
+                <span class="crumbs">区域管理 > 人员管理 > 区域资料 > 查看资料 > 修改资料</span>
+                <div class="dataChange">
+                    <form>
+                        <p><span class="changeName">公司编号</span>:<span style="color: #000;margin-left: 10px">{{companyId}}</span></p>
+                        <p><span class="changeName">公司名称</span>:<input type="text" name="name" ms-attr-value="{{name}}"/></p>
+                        <p><span class="changeName">公司账号</span>:<input type="text" name="id" ms-attr-value="{{id}}"/></p>
+                        <p><span class="changeName">负责人</span>:<input type="text" name="principal" ms-attr-value="{{principal}}"/></p>
+                        <p><span class="changeName">联系方式</span>:<input type="text" name="tel" ms-attr-value="{{tel}}"/></p>
+                        <p><span class="changeName">其他信息</span>:<textarea name="otherMes" cols="90" rows="5" ms-attr-value="{{otherMes}}"></textarea></p>
+                        <button class="subChange">完成修改</button>
+                        <button class="changePassword" ms-click="changePassword">修改密码</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

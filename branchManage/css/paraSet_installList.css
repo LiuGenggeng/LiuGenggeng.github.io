@@ -1,0 +1,44 @@
+.installList {
+    padding: 0;
+    margin: 20px 0 40px 0;
+    text-align: center;
+    font-size:14px;
+    background: #fff;
+    width: 900px;
+    height: 38px;
+    line-height: 38px;
+}
+table .listName th{
+    color: #1465ad;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 16px;
+}
+.list th {
+    font-weight: 900;
+    color: #000000;
+    border-right: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6;
+    border-top: 1px solid #d6d6d6;
+    padding: 5px 8px;
+}
+
+table .listleft {
+
+    border-left: 1px solid #d6d6d6;
+
+}
+
+td {
+    border-right: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6;
+    font-size:14px;
+    padding: 5px 8px;
+}
+th input.stop{
+    float: right;
+}
+th input.start{
+    background-color: #1fbba6;
+    float: right;
+}

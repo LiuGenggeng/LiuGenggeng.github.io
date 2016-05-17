@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>分公司人员管理人员资料修改</title>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/peoMan.css">
+    <link rel="stylesheet" type="text/css" href="css/peoMan_authorize.css">
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/avalon.js"></script>
+    <script type="text/javascript" src="js/peoMan_authorize.js"></script>
+</head>
+<body scroll=auto>
+<div class="wrapper" ms-controller="Gas">
+	<div class="sidebar">
+		 <div class="logo"></div>
+		 <nav class="manageList">
+		     <ul>
+                 <li><a href="ordInq_list.html" class="orderManage">订单管理<span> > </span></a></li>
+                 <li><a href="paraSet_hot.html" class="parameterSet">参数设定<span> > </span></a></li>
+                 <li><a href="peoMan_branch.html" class="staffManage">人员管理<span> > </span></a></li>
+                 <li><a href="myInfo_infoChange.html" class="myAccount">我的账号<span> > </span></a></li>
+                 <li><a href="board_detailCheck.html" class="annoucement">公司公告<span> > </span></a></li>
+		     </ul>
+		 </nav>
+	</div>
+	<div class="content">
+		<header>
+			<h2>港华燃气集团{{branchName}}</h2>
+			<span class="unlogin"><a href="#">退出登录</a></span>
+		</header>
+        <div class="navbar">
+            <ul>
+                <li><a href="peoMan_branch.html"    id="peoCheck">人员查看</a></li>
+                <li><a href="peoMan_authorize.html" id="lowerAuthority"  class="selected">下级授权</a></li>
+            </ul>
+        </div>
+        <div class="breadCrummps">
+            <span>分公司列表 &gt; 人员管理 &gt; 下级授权</span>
+        </div>
+
+        <div class="infoChange_info authorize">
+            <form>
+                <p>报装员编号 :&nbsp<span id="workerNum">XN001002</span></p>
+                <p>报装员姓名 :&nbsp<input id="workerName" type="text"/></p>
+                <p>报装员账号 :&nbsp<input id="workerAccount" type="text"/></p>
+                <p>报装员密码 :&nbsp<input id="workerPassword" type="text"/></p>
+                <p>确认密码 &nbsp&nbsp&nbsp:&nbsp<input id="workerPasswordAck" type="text"/></p>
+                <p><span class="otherInfo">其他信息  &nbsp &nbsp:&nbsp</span></p>
+
+            </form>
+
+            <div class="workerOtherInfo infoChange_info">
+                <form>
+                    <p>性别 :&nbsp<input type="radio" name="sex" value="男" /> 男
+                        <input type="radio" name="sex" value="女" /> 女</p>
+                    <p>电话 :&nbsp<input id="workerPhone" type="text"/></p>
+                    <p>邮箱 :&nbsp<input id="workerMail" type="text"/></p>
+                    <p>职务 :&nbsp<input id="workerOffice" type="text"/></p>
+                    <p><span class="otherInfo">其他  :&nbsp</span><textarea id="peopleOtherInfo"></textarea></p>
+                </form>
+
+            </div>
+            <input class="confirmAuthButton modifyButton" value="确认授权" type="submit"/>
+        </div>
+	</div>
+
+</div>
+</body>
+</html>

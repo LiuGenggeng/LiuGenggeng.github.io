@@ -1,0 +1,13 @@
+.boardList .listTitle textarea {
+    resize: none;
+    height: 45px;
+    width: 325px;
+}
+.boardList .listContent textarea {
+    resize: none;
+    height: 280px;
+    width: 300px;
+}
+.content .boardList .publish{
+    margin-top: -240px;
+}

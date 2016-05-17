@@ -1,0 +1,44 @@
+a.orderManage {
+    background-image: url('../images/orderInquiry_gray.png');
+    background-repeat: no-repeat;
+    background-position: 47px 17px;
+    background-color: #0959a3;
+    color: #ffffff !important;
+}
+a.parameterSet {
+    background-image: url('../images/parameterSet_gray.png');
+    background-repeat: no-repeat;
+    background-position: 47px 17px;
+}
+a.parameterSet:hover {
+    background-image: url('../images/parameterSet_white.png');
+    color: #ffffff !important;
+}
+a.staffManage {
+    background-image: url('../images/staffManage_gray.png');
+    background-repeat: no-repeat;
+    background-position: 47px 17px;
+}
+a.staffManage:hover {
+    background-image: url('../images/staffManage_white.png');
+    color: #ffffff !important;
+}
+
+a.myAccount {
+    background-image: url('../images/myAccount_gray.png');
+    background-repeat: no-repeat;
+    background-position: 47px 17px;
+}
+a.myAccount:hover {
+    background-image: url('../images/myAccount_white.png');
+    color: #ffffff !important;
+}
+a.annoucement {
+    background-image: url('../images/announcement_gray.png');
+    background-repeat: no-repeat;
+    background-position: 47px 17px;
+}
+a.annoucement:hover {
+    background-image: url('../images/announcement_white.png');
+    color: #ffffff !important;
+}
