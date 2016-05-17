@@ -37,17 +37,20 @@ $(function() {
                 radius: ['40%', '58%'],
 
                 data:[
-                    {value:335, name:'开发中 13%'}
+                    {"value":"335","name":"开发中 13%"},
+                    {"value":"300","name":"安装中 34%"},
+                    {"value":"225","name":"已完成 30%"},
+                    {"value":"155","name":"已取消 23%"}
                 ]
             }
         ],
         color:['#00bc9c','#56ace4','#f3c700','#eb5037']
     };
     regChart.setOption(option);
-    regChart.showLoading();
+    
     $.ajax({
         type: "POST",
-        url: "js/regRank.json",
+        url: "",
         dataType: "json",
         success: function(data) {
             vm.kaiFa = data.body.data[0].value;
