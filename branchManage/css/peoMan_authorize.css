@@ -1,9 +1,0 @@
-
-.authorize p span #otherInfo {
-    display: block;
-    clear: both;
-}
-.authorize .confirmAuthButton {
-    margin:180px 5px 50px 300px;
-    background-color: #1fbba6;
-}
